@@ -1,4 +1,4 @@
-package com.cucot.play // package  specification is optional, if no package is specified, it goes to the default package
+package com.cucot.play.introduction // package  specification is optional, if no package is specified, it goes to the default package
 
 class HelloWorld {
 }

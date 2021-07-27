@@ -1,4 +1,4 @@
-package com.cucot.play
+package com.cucot.play.introduction
 
 class Variables(val c: Int) {
 }
