@@ -40,7 +40,7 @@ fun main() {
     printEach("Kevin", "Peter", "Johnson", "Canyon", "Falcon")
     println("")
     greetingALl("Kevin", "Peter", "Johnson", "Faker", "Bengi", prefix = "Hello ")
-    val staffs = mutableListOf<String>("Edward Gaming", "RNG", "Sunning")
+    val staffs = mutableListOf("Edward Gaming", "RNG", "Sunning")
     helloThenGoodbyeAll("Goodbye", "Edward Gaming", "RNG", "Sunning")
 }
 

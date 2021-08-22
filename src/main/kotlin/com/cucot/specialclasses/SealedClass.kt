@@ -14,8 +14,8 @@ fun greetSealedClass(mammal: SealedClass): String {
     return when (mammal) {
         is Human -> "Hello, ${mammal.name}; You're working as a ${mammal.job}"
         is Cat -> "Hello ${mammal.name}"
-        is ExtendsSealedClass -> "Hello, ${mammal.name}"
-        is ExtendsSealClassButNotInTheSameDirectory -> "Hello out liner"
+//        is ExtendsSealedClass -> "Hello, ${mammal.name}"
+//        is ExtendsSealClassButNotInTheSameDirectory -> "Hello out liner"
         // when is exhausted already
         // a default branching (else) is not required since all cases are covered. Compiler is smart enough to detect all available implementation inside the package of sealed class
     }

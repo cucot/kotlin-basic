@@ -17,7 +17,9 @@ data class Order(val items: Array<Item>)
 
 fun Item.showOff() = println("Item name: ${this.name} and item price: ${this.price}")
 
-fun Order.maxPricedItem(): Item? = this.items.maxByOrNull { it -> it.price }
+// now property extension
+val Order.maxPricedItem: Item?
+    get() = this.items.maxByOrNull { it.price }
 
 
 fun main() {
@@ -25,5 +27,5 @@ fun main() {
     val joeHat = Item("Hat by Joe", 50.0)
     val firstOrder = Order(arrayOf(kevinHat, joeHat))
     kevinHat.showOff()
-    println(firstOrder.maxPricedItem())
+    println(firstOrder.maxPricedItem)
 }
